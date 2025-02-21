@@ -6,6 +6,8 @@ from calculations import (
     sqrt,
 )
 import sys
+import numpy as np
+
 
 # converting strings to floats
 a = float(sys.argv[1])
