@@ -1,4 +1,5 @@
 from numpy import sqrt as np_sqrt
+from numpy import array
 
 def add(a, b):
     """function to add a and b"""
