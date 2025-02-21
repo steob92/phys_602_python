@@ -1,5 +1,6 @@
 import sys
 import os
+import numpy as np
 
 # Add the base directory to the python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
@@ -10,6 +11,7 @@ from calculations import (
     sub,
     mult,
     div,
+    sqrt,
 )
 
 a = 1.4
@@ -31,3 +33,5 @@ def test_mult():
 def test_div():
     assert div(a, b) == a / b
 
+def test_sqrt():
+    assert sqrt(a) == np.sqrt(a)
