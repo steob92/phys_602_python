@@ -1,5 +1,6 @@
 from numpy import sqrt as np_sqrt
 
+
 def add(a, b):
     """function to add a and b"""
     return a + b
@@ -19,8 +20,9 @@ def div(a, b):
     """function to div a and b"""
     return a / b
 
+
 def sqrt(a):
-    """function to get sqrt(a)"""
+    """function to get sqrt(a) more words"""
     if a > 0:
         return np_sqrt(a)
     return 0
