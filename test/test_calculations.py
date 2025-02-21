@@ -35,3 +35,23 @@ def test_div():
 
 def test_sqrt():
     assert sqrt(a) == np.sqrt(a)
+
+a_array = np.random.normal(0, 4, 100)
+b_array = np.random.normal(0, 4, 100)
+
+def test_add_arr():
+    assert add(a_array, b_array) == a_array + b_array
+
+def test_sub_arr():
+    assert sub(a_array, b_array) == a_array - b_array
+
+def test_mult_arr():
+    assert mult(a_array, b_array) == a_array * b_array
+
+def test_div_arr():
+    assert div(a_array, b_array) == a_array / b_array
+
+def test_sqrt_arr():
+    assert sqrt(a_array) == np.array([
+        np.sqrt(_a) if _a > 0 else 0 for _a in a_array
+    ])
