@@ -33,27 +33,34 @@ def test_mult():
 def test_div():
     assert div(a, b) == a / b
 
+
 def test_sqrt():
     assert sqrt(a) == np.sqrt(a) if a > 0 else 0
 
-print ("All our tests worked!")
+
+print("All our tests worked!")
 
 a_array = np.random.normal(0, 4, 100)
 b_array = np.random.normal(0, 4, 100)
 
+
 def test_add_arr():
-    assert add(a_array, b_array) == a_array + b_array
+    assert np.all(add(a_array, b_array) == a_array + b_array)
+
 
 def test_sub_arr():
-    assert sub(a_array, b_array) == a_array - b_array
+    assert np.all(sub(a_array, b_array) == a_array - b_array)
+
 
 def test_mult_arr():
-    assert mult(a_array, b_array) == a_array * b_array
+    assert np.all(mult(a_array, b_array) == a_array * b_array)
+
 
 def test_div_arr():
-    assert div(a_array, b_array) == a_array / b_array
+    assert np.all(div(a_array, b_array) == a_array / b_array)
+
 
 def test_sqrt_arr():
-    assert sqrt(a_array) == np.array([
-        np.sqrt(_a) if _a > 0 else 0 for _a in a_array
-    ])
+    assert np.all(
+        sqrt(a_array) == np.array([np.sqrt(_a) if _a > 0 else 0 for _a in a_array])
+    )
