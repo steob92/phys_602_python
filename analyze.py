@@ -6,6 +6,7 @@ from calculations import (
 )
 import sys
 
+# converting strings to floats
 a = float(sys.argv[1])
 b = float(sys.argv[2])
 
