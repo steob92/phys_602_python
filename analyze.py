@@ -3,6 +3,7 @@ from calculations import (
     sub,
     mult,
     div,
+    sqrt,
 )
 import sys
 
@@ -18,3 +19,4 @@ print(f"a + b = {add(a, b):0.3f}")
 print(f"a - b = {sub(a, b):0.3f}")
 print(f"a * b = {mult(a, b):0.3f}")
 print(f"a / b = {div(a, b):0.3f}")
+print(f"sqrt(a) = {sqrt(a):0.3f}")
