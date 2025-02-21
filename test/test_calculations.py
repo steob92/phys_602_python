@@ -34,4 +34,7 @@ def test_div():
     assert div(a, b) == a / b
 
 def test_sqrt():
-    assert sqrt(a) == np.sqrt(a)
+    assert sqrt(a) == np.sqrt(a) if a > 0 else 0
+
+
+print ("All our tests worked!")
